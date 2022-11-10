@@ -1,0 +1,126 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4739,        118]
+NotebookOptionsPosition[      4199,        102]
+NotebookOutlinePosition[      4600,        118]
+CellTagsIndexPosition[      4557,        115]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"https", ":"}], "//", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"projects", ".", "raspberrypi", ".", "org"}], "/", "en"}], 
+         "/", "projects"}], "/", "getting"}], "-", "started", "-", "with", 
+       "-", 
+       RowBox[{
+        RowBox[{"git", "/", "4"}], "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", "my", " ", "user", " ", "name", " ", "for", 
+        " ", "git", " ", "is", " ", "\"\<Jim Sybeldon\>\"", " ", "with", " ", 
+        "my", "\[IndentingNewLine]", "email", " ", "being", " ", 
+        "\"\<jimsybeldon@gmail.com\>\"", "\[IndentingNewLine]", "Setting", 
+        " ", "up", " ", "Git", "\n", "You"}]}]}], "\[CloseCurlyQuote]"}], 
+    "re", " ", "going", " ", "to", " ", "be", " ", "working", " ", "in", " ", 
+    "a", " ", "terminal", " ", "window", " ", "for", " ", "the", " ", 
+    "duration", " ", "of", " ", "this", " ", "resource"}], ",", 
+   RowBox[{
+   "so", " ", "open", " ", "it", " ", "up", " ", "by", " ", "clicking", " ", 
+    "on", " ", "the", " ", "icon", " ", "on", " ", "the", " ", "desktop"}], 
+   ",", 
+   RowBox[{
+    RowBox[{"or", " ", "by", " ", "pressing", " ", "Ctrl"}], "+", "Alt", "+", 
+    
+    RowBox[{"T", "\[IndentingNewLine]", "on", " ", "your", " ", 
+     RowBox[{"keyboard", ".", "The"}], " ", "first", " ", "thing", " ", "to", 
+     " ", "do", " ", "is", " ", "to", " ", "tell", " ", "Git", " ", "who", 
+     " ", "you", " ", 
+     RowBox[{"are", ".", "This"}], " ", "is", " ", "important"}]}], ",", 
+   RowBox[{
+   "as", " ", "Git", " ", "can", " ", "be", " ", "used", " ", 
+    "collaboratively", " ", "by", " ", "lots", " ", "of", " ", "people"}], 
+   ",", 
+   RowBox[{
+   "so", " ", "it", " ", "needs", " ", "to", " ", "know", " ", "who", " ", 
+    "made", " ", "changes", " ", "to", " ", "which", " ", 
+    RowBox[{"files", ".", "You"}], " ", "can", " ", "use", " ", "your", " ", 
+    "own", " ", "username", " ", "and", " ", "email", " ", "address"}], ",", 
+   RowBox[{
+   "unless", " ", "you", " ", "are", " ", "in", " ", "fact", " ", "the", " ", 
+    "Boy", " ", "Who", " ", 
+    RowBox[{"Lived", "."}]}]}], "\[IndentingNewLine]", "*)"}]], "Input",
+ CellChangeTimes->{{3.8753598575645933`*^9, 3.875359869080613*^9}, {
+  3.875359974227585*^9, 3.875360010649482*^9}, {3.8753631176334867`*^9, 
+  3.875363144584896*^9}, {3.875363211263858*^9, 
+  3.8753632519889812`*^9}},ExpressionUUID->"99775a3b-3bb6-4124-a585-\
+2fe22aef3785"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.875360056300795*^9, 
+  3.8753600652234287`*^9}},ExpressionUUID->"d508e9d9-64f8-460a-a9d6-\
+911e44aac7c5"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{
+   "my", " ", "local", " ", "pi", " ", "directory", " ", "is", " ", "git"}], 
+   "-", 
+   RowBox[{
+   "learning", "\[IndentingNewLine]", "a", " ", "screen", " ", "capture", " ",
+     "of", " ", "terminal", " ", "strokes", " ", "thru", " ", "lesson", " ", 
+    "6", " ", "is", " ", "this", " ", "in", " ", "my", " ", 
+    RowBox[{
+     RowBox[{"directory", " ", "/", "home"}], "/", 
+     RowBox[{"pi", ":", "\[IndentingNewLine]", 
+      RowBox[{"2022", "-", "10", "-", "21", "-", 
+       RowBox[{"123624", "_", "1920", 
+        RowBox[{"x1080_scrot", ".", "png"}]}]}]}]}]}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "*)"}]], "Input",
+ CellChangeTimes->{{3.8753610692943487`*^9, 3.8753611144339933`*^9}, {
+  3.875362827106175*^9, 3.875362858782896*^9}, {3.875363275965654*^9, 
+  3.87536330604956*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"8f740d49-cfd1-4371-afbf-e8a9103f99b9"]
+},
+WindowSize->{606., 619.5},
+WindowMargins->{{Automatic, 164.25}, {34.5, Automatic}},
+FrontEndVersion->"12.1 for Linux ARM (32-bit) (August 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2eacd959-dc5f-4cfd-8ab4-dbf024d054dc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2532, 53, 363, "Input",ExpressionUUID->"99775a3b-3bb6-4124-a585-2fe22aef3785"],
+Cell[3093, 75, 154, 3, 29, "Input",ExpressionUUID->"d508e9d9-64f8-460a-a9d6-911e44aac7c5"],
+Cell[3250, 80, 945, 20, 134, "Input",ExpressionUUID->"8f740d49-cfd1-4371-afbf-e8a9103f99b9"]
+}
+]
+*)
+

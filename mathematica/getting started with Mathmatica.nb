@@ -1,0 +1,434 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16627,        426]
+NotebookOptionsPosition[     15830,        404]
+NotebookOutlinePosition[     16228,        420]
+CellTagsIndexPosition[     16185,        417]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"https", ":"}], "//", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"projects", ".", "raspberrypi", ".", "org"}], "/", "en"}], 
+        "/", "projects"}], "/", "getting"}], "-", "started", "-", "with", "-", 
+      RowBox[{
+       RowBox[{"mathematica", "/", "0"}], "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
+       RowBox[{"https", ":"}]}]}]}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"projects", ".", "raspberrypi", ".", "org"}], "/", "en"}], 
+       "/", "projects"}], "/", "getting"}], "-", "started", "-", "with", "-", 
+     
+     RowBox[{
+      RowBox[{"mathematica", "/", "complete"}], "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"https", ":"}]}]}]}], "//", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"projects", ".", "raspberrypi", ".", "org"}], "/", "en"}], "/",
+       "projects"}], "/", "getting"}], "-", "started", "-", "with", "-", 
+    "git"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.8753459306069107`*^9, 3.875345999410365*^9}, 
+   3.875346087965119*^9, 3.875346142452927*^9, 3.875346211643641*^9, {
+   3.8753462610937157`*^9, 3.875346333602915*^9}, {3.875346446330084*^9, 
+   3.875346536581456*^9}, 3.875346580214785*^9, {3.87534832479284*^9, 
+   3.875348331330657*^9}, {3.875348755039818*^9, 3.875348757468961*^9}, {
+   3.875349330303793*^9, 3.875349333245385*^9}, {3.875349456096738*^9, 
+   3.875349507444458*^9}},
+ EmphasizeSyntaxErrors->
+  True,ExpressionUUID->"c7762d45-d1e1-495a-b66c-eb75cc14792c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"?", "Device*"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8753460209244843`*^9, 3.8753460209252*^9}, {
+   3.875348476750667*^9, 3.875348488025902*^9}, {3.8753485238829947`*^9, 
+   3.875348540038735*^9}, {3.875348593937463*^9, 3.875348624869173*^9}, 
+   3.875348668796763*^9},
+ CellLabel->"In[49]:=",ExpressionUUID->"dcf4f351-104e-45c8-8fe2-27b6c73e42f0"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"]], " ", 
+          StyleBox["System`", "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], " ", 
+              StyleBox["System`", "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 StyleBox["DeviceClose", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceClose", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceReadBuffer", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceReadBuffer", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DeviceConfigure", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceConfigure", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceReadLatest", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceReadLatest", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DeviceExecute", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceExecute", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceReadList", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceReadList", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 
+                 StyleBox["DeviceExecuteAsynchronous", 
+                  "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceExecuteAsynchronous", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceReadTimeSeries", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceReadTimeSeries", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DeviceObject", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceObject", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Devices", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "Devices", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DeviceOpen", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceOpen", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceStreams", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceStreams", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DeviceOpenQ", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceOpenQ", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceWrite", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceWrite", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["DeviceRead", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceRead", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DeviceWriteBuffer", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-fc5d80aa-df04-4983-83f1-127fe0efb914", {
+                   "DeviceWriteBuffer", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.475]}}}],
+             ImageMargins->{{10, 0}, {0, 2}}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellChangeTimes->{3.875348627704879*^9, 3.875348675768345*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"8e7267f8-7bc4-4881-952b-e8911048457b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"?", "Binom*"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.875348690651663*^9, 3.875348715722389*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"ef280fd0-eb75-4e9f-9b6e-5637a9418888"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"]], " ", 
+          StyleBox["System`", "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], " ", 
+              StyleBox["System`", "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 StyleBox["Binomial", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-a9778b44-4aeb-4203-83e7-fb5bcc5dfc3b", {
+                   "Binomial", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["BinomialDistribution", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-a9778b44-4aeb-4203-83e7-fb5bcc5dfc3b", {
+                   "BinomialDistribution", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["BinomialProcess", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-a9778b44-4aeb-4203-83e7-fb5bcc5dfc3b", {
+                   "BinomialProcess", "System`"}, False},
+                 ButtonNote->"System`",
+                 Evaluator->Automatic]}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.31666666666666665`]}}}],
+             ImageMargins->{{10, 0}, {0, 2}}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellChangeTimes->{3.875348716334402*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"2c532cdf-8595-4ba3-a265-7600bfccdac4"]
+}, Open  ]]
+},
+WindowSize->{606., 298.5},
+WindowMargins->{{Automatic, 37.5}, {-69, Automatic}},
+FrontEndVersion->"12.1 for Linux ARM (32-bit) (August 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b767969a-e2d2-46c2-84dc-f4f06fca7b6a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1639, 42, 181, "Input",ExpressionUUID->"c7762d45-d1e1-495a-b66c-eb75cc14792c"],
+Cell[CellGroupData[{
+Cell[2222, 66, 405, 7, 51, "Input",ExpressionUUID->"dcf4f351-104e-45c8-8fe2-27b6c73e42f0"],
+Cell[2630, 75, 9362, 227, 247, "Output",ExpressionUUID->"8e7267f8-7bc4-4881-952b-e8911048457b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12029, 307, 230, 4, 51, "Input",ExpressionUUID->"ef280fd0-eb75-4e9f-9b6e-5637a9418888"],
+Cell[12262, 313, 3552, 88, 96, "Output",ExpressionUUID->"2c532cdf-8595-4ba3-a265-7600bfccdac4"]
+}, Open  ]]
+}
+]
+*)
+
